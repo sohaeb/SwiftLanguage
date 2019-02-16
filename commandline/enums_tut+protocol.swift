@@ -25,7 +25,6 @@ enum CSSColorTypes {
 }
 
 
-
 // conform to a protocol
 extension CSSColorTypes: CustomStringConvertible {
     
