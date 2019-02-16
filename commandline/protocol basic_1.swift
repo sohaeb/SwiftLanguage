@@ -53,6 +53,12 @@ struct Momy: Cooking {
     func makingFood() { print("Pizza coming soon!") }
 }
 
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
 /*
  var mom = Mom()
  mom.makingFood() // "Pizza coming soon!"
@@ -64,6 +70,13 @@ struct Babe {
 
 var babe = Babe()
 var momy = Momy()
+
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
 
 //babe.delegate = momy
 
@@ -97,6 +110,14 @@ struct Cool : test {
         return "cool"
     }
 }
+
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
+
 /*
  var obj1 = Cool()
  
@@ -115,6 +136,13 @@ protocol newTest {
 struct Wow : newTest {
     var firstName: String
 }
+
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
 
 /*
  var objNew = Wow(firstName: "hello")

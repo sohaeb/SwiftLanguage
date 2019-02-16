@@ -12,9 +12,6 @@ import Foundation
 
 
 
-
-
-
 //------------------------
 
 ////enum CompassPoint {
