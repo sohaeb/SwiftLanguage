@@ -53,17 +53,6 @@ struct Momy: Cooking {
     func makingFood() { print("Pizza coming soon!") }
 }
 
-//=============================================
-
-//          Now  Main()
-
-//=============================================
-
-/*
- var mom = Mom()
- mom.makingFood() // "Pizza coming soon!"
- */
-
 struct Babe {
     var delegate: Cooking? // delegate = someone with special skills
 }

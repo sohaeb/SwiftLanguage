@@ -28,6 +28,12 @@ class LinearCongruentialGenerator: RandomNumberGenerator {
     }
 }
 
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
 /*
 let obj2 = LinearCongruentialGenerator()
 print(obj2.random())
@@ -53,6 +59,13 @@ class DiceClass {
         return Int(generator.random() * Double(sides)) + 1
     }
 }
+
+//=============================================
+
+//          Now  Main()
+
+//=============================================
+
 
 /*
 var d6 = DiceClass(sides: 6, generator: LinearCongruentialGenerator())
@@ -164,6 +177,12 @@ class DiceGameTracker: DiceGameDelegate {
         print("The game lasted for \(numberOfTurns) turns")
     }
 }
+
+//=============================================
+
+//          Now  Main()
+
+//=============================================
 
 
 /*
