@@ -49,8 +49,6 @@ class AlSamadResturant : FoodDelegate {
 }
 
 
-
-
 //=================================================
 //
 //         1-  Set    the    delgates
@@ -88,18 +86,21 @@ class HotelVenue {
 // Old Method
 //=============================================
 
-//let pos = AjmanMedia()
-//
-//wed.posssster = pos
-//wed.posssster?.design()
+// let venue = HotelVenue()
+// let samad = AlSamadResturant()
+
+// venue.foodDelegate   =   samad
+
+// venue.foodDelegate.cook()
+
 
 
 // Here is the new trick
 //=============================================
 
 //let venue = HotelVenue()
-//
-//venue.foodDelegate   = AlSamadResturant()
-//
+
+//venue.foodDelegate   =   AlSamadResturant()
+
 //venue.deliverFood()
 //venue.cookFood()

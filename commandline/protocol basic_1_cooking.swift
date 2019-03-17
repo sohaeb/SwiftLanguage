@@ -9,18 +9,12 @@
 import Foundation
 
 
-
-
-//
-
-
 protocol sohaeb {
     var name : String { get }
     var last : String { get set }
     
     func wow()
 }
-
 
 
 class Father : sohaeb {
@@ -36,7 +30,6 @@ class Father : sohaeb {
     var last : String  = "THis is how its done"
     
 }
-
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -56,9 +49,6 @@ struct Babe {
     var delegate: Cooking? // delegate = someone with special skills
 }
 
-var babe = Babe()
-var momy = Momy()
-
 //=============================================
 
 //          Now  Main()
@@ -66,8 +56,10 @@ var momy = Momy()
 //=============================================
 
 /*
- var babe = Baby()
- 
+
+var babe = Babe()
+var momy = Momy()
+
  babe.delegate = mom
  // The type of the delegate property is “Cook?”.
  // The type of the “mom” can be both “Cook” and “Mom”
@@ -81,7 +73,6 @@ var momy = Momy()
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////    Get  ONLY   ////////////////////////////////////////
-
 
 
 protocol test {
