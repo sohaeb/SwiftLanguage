@@ -77,14 +77,14 @@
 			children = (
 				6C8F25EE21003DD700637A57 /* main.swift */,
 				6C3B4DAD22178529000A372D /* protocol basic_1_cooking.swift */,
-				6C019DEE21062E30001DA55C /* Protocol_delegate_dice_2.swift */,
-				6C2985862147FBB8005D2850 /* Protocol_tut_animals_3.swift */,
 				6C3B4DAF22179C01000A372D /* wedding_protocol_4.swift */,
+				6C2985862147FBB8005D2850 /* Protocol_tut_animals_3.swift */,
+				6C29858821480199005D2850 /* enumss_tut.swift */,
 				6C29858A21480DCB005D2850 /* enums_tut+protocol.swift */,
+				6C019DEE21062E30001DA55C /* Protocol_delegate_dice_2.swift */,
 				6C8F25F721006D5700637A57 /* Boxing.swift */,
 				6C8F25F5210043BD00637A57 /* classVsStruct.swift */,
 				6C8F25F921007CA500637A57 /* catch_error.swift */,
-				6C29858821480199005D2850 /* enumss_tut.swift */,
 			);
 			path = commandline;
 			sourceTree = "<group>";
@@ -121,6 +121,7 @@
 				TargetAttributes = {
 					6C8F25EA21003DD700637A57 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -281,7 +282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U2Z4D5J48;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -291,7 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3U2Z4D5J48;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

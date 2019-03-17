@@ -19,24 +19,8 @@ import Foundation
 
 protocol FoodDelegate {
     func cook()
-    func bringItHotel()
 }
 
-protocol DJDelegate {
-    func selectMusic()
-    func playMusic()
-}
-
-protocol DesignPosterDelegate {
-    func printPoster()
-    func createPoster()
-}
-
-protocol ServantsDelegate {
-    func welcomePeople()
-    func bringFood()
-    func helpAttendies()
-}
 
 //=============================================
 
@@ -65,16 +49,6 @@ class AlSamadResturant : FoodDelegate {
 }
 
 
-class EgyptianWomen : DJDelegate {
-    
-    func selectMusic() {
-        print("list of music")
-    }
-    
-    func playMusic() {
-        print("on the day of the wedding play music")
-    }
-}
 
 
 //=================================================
@@ -91,17 +65,18 @@ class HotelVenue {
     // Called Hotel Venue coz it brings everyone together
     
     var foodDelegate : FoodDelegate?
-    var egyptionDJDelegate : DJDelegate?
-    
-    func deliverFood() {
-        print("deliverFood() called")
-        return (foodDelegate?.bringItHotel())!
-    }
-    
+
+    //////////////////////////////////////
+    //  Not Necessary, but good design//
+    //////////////////////////////////////
+
+    /*
     func cookFood() {
         print("cookFood() called")
         return (foodDelegate?.cook())!
     }
+ */
+    
 }
 
 //=============================================
@@ -110,8 +85,18 @@ class HotelVenue {
 
 //=============================================
 
+// Old Method
+//=============================================
 
+//let pos = AjmanMedia()
 //
+//wed.posssster = pos
+//wed.posssster?.design()
+
+
+// Here is the new trick
+//=============================================
+
 //let venue = HotelVenue()
 //
 //venue.foodDelegate   = AlSamadResturant()

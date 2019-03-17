@@ -55,6 +55,7 @@ class DiceClass {
         self.sides = sides
         self.generator = generator
     }
+    
     func roll() -> Int {
         return Int(generator.random() * Double(sides)) + 1
     }
@@ -85,18 +86,6 @@ for _ in 1...5 {
 /////////////////////////    Delegation     //////////////////////////////////
 
 
-protocol DiceGame {
-    var dice: Dice { get }
-    func play()
-}
-
-
-protocol DiceGameDelegate: AnyObject {
-    func gameDidStart(_ game: DiceGame)
-    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)
-    func gameDidEnd(_ game: DiceGame)
-}
-
 
 class Dice {
     let sides: Int // 1 - 6
@@ -113,12 +102,35 @@ class Dice {
     }
 }
 
+
+
+
+
+
+protocol DiceGameDelegate: AnyObject {
+    func gameDidStart(_ game: DiceGame)
+    func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)
+    func gameDidEnd(_ game: DiceGame)
+}
+
+
+
+
+
+protocol DiceGame {
+    var dice: Dice { get }
+    func play()
+}
+
 /*
  
  //// THe Snake & Ladder Game
  
  */
 class SnakesAndLadders: DiceGame {
+    
+    weak var delegate: DiceGameDelegate?
+    
     let finalSquare = 25
     
     let dice = Dice(sides: 6, generator: LinearCongruentialGenerator())
@@ -131,8 +143,6 @@ class SnakesAndLadders: DiceGame {
         board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
         board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
     }
-    
-    weak var delegate: DiceGameDelegate?
     
     func play() {
         
@@ -159,6 +169,8 @@ class SnakesAndLadders: DiceGame {
     }
 }
 
+
+////// DELEGATE CLASS
 
 class DiceGameTracker: DiceGameDelegate {
     var numberOfTurns = 0

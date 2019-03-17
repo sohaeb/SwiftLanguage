@@ -11,20 +11,16 @@ import Foundation
 
 
 
-
-
-//------------------------
-
-////enum CompassPoint {
-////    case north, south, east, west
-////    mutating func turnNorth() {
-////        self = .north
-////    }
-////}
-////
-////var currentDirection = CompassPoint.west
-////let rememberedDirection = currentDirection
-////currentDirection.turnNorth()
+//enum CompassPoint {
+//    case north, south, east, west
+//    mutating func turnNorth() {
+//        self = .north
+//    }
+//}
+//
+//var currentDirection = CompassPoint.west
+//let rememberedDirection = currentDirection
+//currentDirection.turnNorth()
 //
 
 

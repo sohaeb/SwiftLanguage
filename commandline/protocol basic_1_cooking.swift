@@ -9,12 +9,18 @@
 import Foundation
 
 
+
+
+//
+
+
 protocol sohaeb {
     var name : String { get }
     var last : String { get set }
     
     func wow()
 }
+
 
 
 class Father : sohaeb {
@@ -27,17 +33,10 @@ class Father : sohaeb {
         return "Suhaib"
     }
     
-    var last : String {
-        get {
-            return "Nabiel"
-        }
-        
-        set {
-            self.last = newValue
-        }
-    }
+    var last : String  = "THis is how its done"
     
 }
+
 
 
 //////////////////////////////////////////////////////////////////////////////
@@ -65,11 +64,6 @@ var momy = Momy()
 //          Now  Main()
 
 //=============================================
-
-
-//babe.delegate = momy
-
-//babe.delegate?.makingFood()
 
 /*
  var babe = Baby()

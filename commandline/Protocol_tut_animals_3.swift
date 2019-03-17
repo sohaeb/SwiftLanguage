@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 protocol Animal {
     var numberOfLimbs: Int { get }
     var isVertebrate: Bool { get }
@@ -79,13 +80,9 @@ extension Fish where Self: Animal {
 struct Lion: Animal, Mammal, Swimmable { }
 // Wow, look at that! We don’t have to fill out a body for these structs
 // because their behaviors are already implemented by their backing protocols.
+
+
 struct Cow: Animal, Mammal { }
-
-
-
-
-
-
 
 
 
