@@ -106,7 +106,6 @@ class Dice {
 
 
 
-
 protocol DiceGameDelegate: AnyObject {
     func gameDidStart(_ game: DiceGame)
     func game(_ game: DiceGame, didStartNewTurnWithDiceRoll diceRoll: Int)

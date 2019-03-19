@@ -9,7 +9,6 @@
 import Foundation
 
 
-
 //=============================================
 
 //          Define  Protocols
@@ -37,7 +36,7 @@ class AlSamadResturant : FoodDelegate {
         // This will be called when you do this:
         // let venue = HotelVenue()
         // Then:
-        // venue.foodDelegate   = AlSamadResturant()
+        // venue.foodDelegate  = AlSamadResturant()
         // and:
         // venue.cookFood()
         
@@ -69,7 +68,7 @@ class HotelVenue {
     //////////////////////////////////////
 
     /*
-    func cookFood() {
+    func cooooooooookFood() {
         print("cookFood() called")
         return (foodDelegate?.cook())!
     }
@@ -83,6 +82,10 @@ class HotelVenue {
 
 //=============================================
 
+
+
+
+
 // Old Method
 //=============================================
 
@@ -91,7 +94,10 @@ class HotelVenue {
 
 // venue.foodDelegate   =   samad
 
-// venue.foodDelegate.cook()
+// venue.foodDelegate.cook() // This FUNCTION in (foodDelegate)
+
+
+
 
 
 
@@ -100,7 +106,15 @@ class HotelVenue {
 
 //let venue = HotelVenue()
 
-//venue.foodDelegate   =   AlSamadResturant()
+//venue.foodDelegate   =   AlSamadResturant()  // COOOL shortcut
 
-//venue.deliverFood()
-//venue.cookFood()
+//venue.cooooooooookFood() // THis FUNCTION in (Wedding)
+
+
+
+
+
+
+
+
+
