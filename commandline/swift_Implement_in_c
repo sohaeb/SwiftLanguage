@@ -1,0 +1,20 @@
+
+// could be mimick'ed in C as follows:
+
+/*
+enum {FOO_NONE_, FOO_NAME_, FOO_PRICE_};
+typedef struct {
+   int flavor; // FOO_NONE_, FOO_NAME_ or FOO_PRICE_
+   union {
+      char *Name;  // payload for FOO_STRING_
+      double Price; // payload for FOO_DOUBLE_
+   } u;
+   
+   
+   
+   
+  Best way to call a Swift function from C? https://forums.swift.org/t/best-way-to-call-a-swift-function-from-c/9829/11
+   
+   How to wrap a C library in Swift ? https://www.hackingwithswift.com/articles/87/how-to-wrap-a-c-library-in-swift
+   
+*/
