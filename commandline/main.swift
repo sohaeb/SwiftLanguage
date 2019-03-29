@@ -8,27 +8,105 @@
 
 import Foundation
 
-
-
-
-
-
-//enum CompassPoint {
-//    case north, south, east, west
-//    mutating func turnNorth() {
-//        self = .north
-//    }
+//enum anError : Error {
+//    case someValue
+//    case ggValue(reason: String)
+//    case hmm
 //}
 //
-//var currentDirection = CompassPoint.west
-//let rememberedDirection = currentDirection
-//currentDirection.turnNorth()
-//
+//func testingError() throws {
+//    if 1 == 2 {
+//        throw anError.someValue
+//    } else {
+//        throw anError.ggValue(reason: "Wow")
+//    }
+//}
+
+
+//do {
+//     let _ = try testingError()
+//} catch  anError.someValue {
+//    print("stuff")
+//} catch {
+//    print(error)
+//}
 
 
 
 
 
+
+
+
+
+
+
+/*
+ 
+ protocol RandomGenerator2 {
+ func random()
+ }
+ 
+ //----//----//----//----//----//----//----//----//----
+ 
+ class LinearAlog2 : RandomGenerator2 {
+ func random() {
+ print("algo1")
+ }
+ }
+ 
+ class LinearAlog23 : RandomGenerator2 {
+ func random() {
+ print("algo2")
+ }
+ }
+ 
+ class LinearAlog24 : RandomGenerator2 {
+ func random() {
+ print("algo3")
+ }
+ }
+ 
+ class LinearAlog25 : RandomGenerator2 {
+ func random() {
+ print("algo4")
+ }
+ }
+ 
+ //----//----//----//----//----//----//----//----//----
+ 
+ class Dice2 {
+ var sides : Int
+ var gen : RandomGenerator2
+ 
+ init(gen: RandomGenerator2, sides: Int) {
+ self.gen = gen
+ self.sides = sides
+ }
+ 
+ func rolling() {
+ gen.random()
+ }
+ }
+ 
+ //let diceObj = Dice2(gen: LinearAlog2(), sides: 6)
+ //diceObj.rolling()
+ 
+ protocol DiceProtocol {
+ 
+ var dice : Dice2 { get }
+ //    func play()
+ }
+ 
+ protocol DiceDelegate {
+ func gameDidStart(_ g: DiceProtocol)
+ func gameDidEnd(_ g: DiceProtocol)
+ func game(_ g: DiceProtocol, didStartNewTurnWithDiceRoll diceRoll: Int)
+ }
+ 
+ */
+
+//------------------------------------------------------------------
 
 
 //struct Downloader {

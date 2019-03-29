@@ -23,20 +23,37 @@ struct Suhaib {
 
 
 // Shared rather than copied
+
 class Box {
     var suhaib : Suhaib?
     
-    init(){ }
+    init() {  }
     
     init(suhaib : Suhaib) {
         self.suhaib = suhaib
     }
 }
 
+//  1st way
+///var objBox = Box()
+///objBox.suhaib = Suhaib(name: "helo")
+
+//  2nd way Shorcut if you add:  init(suhaib : Suhaib)
+/// let obj2 = Box(suhaib: Suhaib(name: "shorcut"))
+
+//  3rd way:
+///var stuct_Object = Suhaib(name: "suhaib")
+///var objBox3 = Box(suhaib: stuct_Object)
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
 
 class Demo {
     var box : Box!
 }
+
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////      G E N E R I C    C L A S S         ////////////////
@@ -55,8 +72,8 @@ class Box_Generic<T> {
 
 class Demo_Generic {
     var box : Box_Generic<Suhaib>?
-    //    var box : Box_Generic<Senan>?
-    //    var box : Box_Generic<Anas>?
+    ///    var box : Box_Generic<Senan>?
+    ///    var box : Box_Generic<Anas>?
 }
 
 
@@ -65,20 +82,7 @@ class Demo_Generic {
 
 /*
 
-//  1st way
-//var objBox = Box()
-//objBox.suhaib = Suhaib(name: "helo")
-
-//  2nd way Shorcut if you add:  init(suhaib : Suhaib)
-// let obj2 = Box(suhaib: Suhaib(name: "shorcut"))
-
-//  3rd way:
-var stuct_Object = Suhaib(name: "suhaib")
-var objBox3 = Box(suhaib: stuct_Object)
-
-//////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-
+ /*
 var demo1  = Demo()
 demo1.box = objBox3
 
@@ -99,6 +103,7 @@ print("// COOL STUFF: main_stuct_Object.name = \"test\"")
 print("demo1 NOT AFFECTD: \(demo1.box.suhaib?.name ?? "nil")") // suhaib
 print("demo2 NOT AFFECTD: \(demo2.box.suhaib?.name ?? "nil")") // suhaib
 
+ */
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 //////     We test chainging:   box3 -> Struct -> Name   /////////////////////

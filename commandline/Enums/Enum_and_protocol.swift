@@ -1,23 +1,19 @@
 //
-//  enums2.swift
+//  Enum_and_protocol.swift
 //  commandline
 //
-//  Created by may on 2018-09-11.
-//  Copyright © 2018 sohaeb. All rights reserved.
+//  Created by may on 2019-03-28.
+//  Copyright © 2019 sohaeb. All rights reserved.
 //
 
 import Foundation
 
-
 enum Colors : String {
-    
     case Red
     case Blue
     case Cyan
     case Green, Yellow
-    
 }
-
 
 enum CSSColorTypes {
     case named(Colors)
@@ -31,7 +27,6 @@ extension CSSColorTypes: CustomStringConvertible {
     // The extension style is nice because it makes what you define in order to conform to a given protocol fully explicit. In the case of CustomStringConvertible, you’re required to implement a getter for a description string property.
     
     //  CustomStringConvertible:  tells Swift that our type, CSSColor, can be converted to a string. We tell it how by implementing the description computed property.
-    
     
     var description: String {
         switch self {
@@ -47,9 +42,9 @@ extension CSSColorTypes: CustomStringConvertible {
     init(gray: UInt8) {
         self = .rgb(gray, gray, gray)
     }
-   
-    // let color3 = CSSColor(gray: 0xaa)
-    // print(color3)  //  prints #AAAAAA
+    
+    /// let color3 = CSSColor(gray: 0xaa)
+    /// print(color3)  //  prints #AAAAAA
     
     
     //    Namespaces with Enum --    Named types can act as a namespace to keep things organized and minimize complexity.
@@ -58,30 +53,22 @@ extension CSSColorTypes: CustomStringConvertible {
     enum ColorName: String {
         case black, silver, gray, white, maroon, red, purple, fuchsia, green, lime, olive, yellow, navy, blue, teal, aqua
     }
-    
-    
-    
-    
-    
-    
 }
-
 
 
 // To print stuff out:
 
 
 //    // Version 1
-//    let color = colorss.green
-//    let type1 = CSSColoors.named(color)
+///    let color = colorss.green
+///    let type1 = CSSColoors.named(color)
 //
 //    // Version 2
-//    let type2 = CSSColoors.named(.blue)
+///    let type2 = CSSColoors.named(.blue)
 //
 //
-//    let rgbColor = CSSColoors.RGB(0xAA, 0xAA, 0xAA)
+///    let rgbColor = CSSColoors.RGB(0xAA, 0xAA, 0xAA)
 //
 //
-//    print(rgbColor) // no need for .description
-//    print(type1) // no need for .description
-
+///    print(rgbColor) // no need for .description
+///    print(type1) // no need for .description

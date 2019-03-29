@@ -8,6 +8,31 @@
 
 import Foundation
 
+struct Dog {
+    var name: String
+    var age : Int
+}
+
+enum DogResult {
+    case Success(Dog)
+    case Failure(errorText: String)
+}
+
+func create(age: Int?, name: String?) -> DogResult {
+    
+    if let age = age, let name = name, name.count > 0, age > 0 {
+        if let dog = Dog(name: name, age: age) {
+            return DogResult.Success(dog)
+        } else {
+            return DogResult.Failure(errorText: "Age is invalide")
+        }
+    } else {
+        return DogResult.Failure(errorText: "Info is missing")
+    }
+}
+
+
+
 
 enum SomeError : Error {
     case WrongValue(reason: Double)
