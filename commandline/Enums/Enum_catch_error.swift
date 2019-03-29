@@ -8,6 +8,13 @@
 
 import Foundation
 
+///////////////////////////////////////////////////////////
+
+//      Enums : No Error Protocol
+
+///////////////////////////////////////////////////////////
+
+
 struct Dog {
     var name: String
     var age : Int
@@ -32,6 +39,11 @@ func create(age: Int?, name: String?) -> DogResult {
 }
 
 
+///////////////////////////////////////////////////////////
+
+        //      Enums : Error Protocol
+
+///////////////////////////////////////////////////////////
 
 
 enum SomeError : Error {
@@ -50,13 +62,13 @@ func sum(val1 : Double, val2: Double) throws -> Double {
     return 10
 }
 
-//do {
-//    let _ = try sum(val1: 1, val2: 3)
-//
-//} catch SomeError.AnotherWrongValue {
-//    print("WrongValue.")
-//
-//} catch { // == same:  } catch let error { print(error)
-//    print("Unexpected error: \(error).")
-//}
+///do {
+///    let _ = try sum(val1: 1, val2: 3)
+
+///} catch SomeError.AnotherWrongValue {
+///    print("WrongValue.")
+
+///} catch { // == same:  } catch let error { print(error)
+///    print("Unexpected error: \(error).")
+///}
 
