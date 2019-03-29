@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C019DEF21062E30001DA55C /* Protocol_delegate_dice_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C019DEE21062E30001DA55C /* Protocol_delegate_dice_4.swift */; };
+		6C019DEF21062E30001DA55C /* Protocol_delegate_dice_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C019DEE21062E30001DA55C /* Protocol_delegate_dice_3.swift */; };
 		6C1A4657224DB2A800F1480C /* Enum_and_protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1A4656224DB2A800F1480C /* Enum_and_protocol.swift */; };
-		6C2985872147FBB8005D2850 /* Protocol_tut_animals_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2985862147FBB8005D2850 /* Protocol_tut_animals_3.swift */; };
+		6C2985872147FBB8005D2850 /* Protocol_tut_animals_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2985862147FBB8005D2850 /* Protocol_tut_animals_4.swift */; };
 		6C29858921480199005D2850 /* enumss_tut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C29858821480199005D2850 /* enumss_tut.swift */; };
 		6C29858B21480DCB005D2850 /* enums_stanford.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C29858A21480DCB005D2850 /* enums_stanford.swift */; };
 		6C3B4DAE22178529000A372D /* protocol basic_1_cooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B4DAD22178529000A372D /* protocol basic_1_cooking.swift */; };
@@ -36,9 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6C019DEE21062E30001DA55C /* Protocol_delegate_dice_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_delegate_dice_4.swift; sourceTree = "<group>"; };
+		6C019DEE21062E30001DA55C /* Protocol_delegate_dice_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_delegate_dice_3.swift; sourceTree = "<group>"; };
 		6C1A4656224DB2A800F1480C /* Enum_and_protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum_and_protocol.swift; sourceTree = "<group>"; };
-		6C2985862147FBB8005D2850 /* Protocol_tut_animals_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_tut_animals_3.swift; sourceTree = "<group>"; };
+		6C2985862147FBB8005D2850 /* Protocol_tut_animals_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol_tut_animals_4.swift; sourceTree = "<group>"; };
 		6C29858821480199005D2850 /* enumss_tut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumss_tut.swift; sourceTree = "<group>"; };
 		6C29858A21480DCB005D2850 /* enums_stanford.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums_stanford.swift; sourceTree = "<group>"; };
 		6C3B4DAD22178529000A372D /* protocol basic_1_cooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "protocol basic_1_cooking.swift"; sourceTree = "<group>"; };
@@ -67,10 +67,11 @@
 		6C1A4654224DAF4700F1480C /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				6CD5CD1A22419AEC003917B6 /* Snakes_ladder_basic_Stuff.swift */,
 				6C3B4DAD22178529000A372D /* protocol basic_1_cooking.swift */,
 				6C3B4DAF22179C01000A372D /* wedding_protocol_2.swift */,
-				6C2985862147FBB8005D2850 /* Protocol_tut_animals_3.swift */,
-				6C019DEE21062E30001DA55C /* Protocol_delegate_dice_4.swift */,
+				6C019DEE21062E30001DA55C /* Protocol_delegate_dice_3.swift */,
+				6C2985862147FBB8005D2850 /* Protocol_tut_animals_4.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -115,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				6C8F25EE21003DD700637A57 /* main.swift */,
-				6CD5CD1A22419AEC003917B6 /* Snakes_ladder_basic_Stuff.swift */,
 				6C1A4654224DAF4700F1480C /* Protocol */,
 				6C1A4658224DB2B000F1480C /* Enums */,
 				6C1A4655224DAF6100F1480C /* Class & Struct */,
@@ -194,9 +194,9 @@
 				6CD5CD1D2241AE50003917B6 /* AnyVSAnyObject.swift in Sources */,
 				6C1A4657224DB2A800F1480C /* Enum_and_protocol.swift in Sources */,
 				6CD5CD1F2241AE78003917B6 /* ComputedProperties.swift in Sources */,
-				6C2985872147FBB8005D2850 /* Protocol_tut_animals_3.swift in Sources */,
+				6C2985872147FBB8005D2850 /* Protocol_tut_animals_4.swift in Sources */,
 				6C8F25F821006D5700637A57 /* Boxing.swift in Sources */,
-				6C019DEF21062E30001DA55C /* Protocol_delegate_dice_4.swift in Sources */,
+				6C019DEF21062E30001DA55C /* Protocol_delegate_dice_3.swift in Sources */,
 				6C3B4DB022179C01000A372D /* wedding_protocol_2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
